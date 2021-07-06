@@ -9,20 +9,19 @@ class TestMaximumTest {
 	
 	@Test
 	void testGetMaxNumberFirstPosition() {
-		Double maxDoubleNum = testMax.getMaxNumber(10.5, 2.5, 9.8);
-		assertEquals(10.5, maxDoubleNum);
+		String maxStr = testMax.getMaxStr("hello", "hi", "h");
+		assertEquals("hello", maxStr);
 	}
 	
 	@Test
 	void testGetMaxNumberSecondPosition() {
-		Double maxDoubleNum = testMax.getMaxNumber(10.5, 20.5, 9.8);
-		assertEquals(20.5, maxDoubleNum);
+		String maxStr = testMax.getMaxStr("hi", "hello", "h");
+		assertEquals("hello", maxStr);
 	}
 	
 	@Test
 	void testGetMaxNumberThirdPosition() {
-		Double maxDoubleNum = testMax.getMaxNumber(10.5, 2.5, 90.8);
-		assertEquals(90.8, maxDoubleNum);
+		String maxStr = testMax.getMaxStr("hi", "h", "hello");
 	}
 
 }
