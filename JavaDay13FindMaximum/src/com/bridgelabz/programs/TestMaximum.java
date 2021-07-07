@@ -19,10 +19,4 @@ public class TestMaximum<t extends Comparable<t>> {
 		  }
 		  return max;
 	}
-	
-	public static void main(String[] args) {
-		TestMaximum.getMaximumNumber("h","hii");
-
-	}
-
 }
